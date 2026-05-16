@@ -1,6 +1,10 @@
 [submodule "frontend"]
 	path = frontend
-	url = git@github.com:Grupo-Lira/FocusQuest-web.git
+	url = https://github.com/Grupo-Lira/FocusQuest-web.git
+	branch = main
+	update = checkout
 [submodule "backend"]
 	path = backend
-	url = git@github.com:Grupo-Lira/backend-rastreamento-ocular.git
+	url = https://github.com/Grupo-Lira/backend-rastreamento-ocular.git
+	branch = main
+	update = checkout
