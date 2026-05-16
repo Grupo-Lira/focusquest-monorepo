@@ -1,20 +1,10 @@
 # FocusQuest Monorepo
 
-Monorepo para orquestração, execução e avaliação do sistema FocusQuest — uma plataforma experimental de rastreamento ocular baseada em visão computacional. O repositório centraliza os serviços frontend e backend, que são mantidos como Git Submodules, e disponibiliza uma execução reprodutível via Docker Compose para uso acadêmico e de pesquisa.
-
-> Sistema gamificado de avaliação de atenção, integrando visão computacional, WebSockets e Arduino. Uso experimental e acadêmico.
-
----
+Monorepo para orquestração, execução e avaliação do sistema FocusQuest — uma plataforma experimental de rastreamento ocular baseada em visão computacional. O repositório centraliza os serviços frontend e backend, e disponibiliza uma execução reprodutível via Docker Compose para facilitar o desenvolvimento, testes e avaliação acadêmica.
 
 ## Visão Geral do Projeto
 
 O FocusQuest é uma plataforma que combina uma aplicação cliente gamificada (Next.js) com um servidor de backend (Node.js) para conduzir experimentos de avaliação atencional inspirados no Teste de Desempenho Contínuo (CPT). O sistema captura dados de rastreamento ocular, recebe eventos de um Arduino (botões/entradas físicas), processa métricas cognitivas em tempo real e persiste resultados para análise posterior.
-
-Principais objetivos do monorepo:
-- Centralizar a execução do sistema (frontend + backend)
-- Facilitar deploy e reprodução experimental com Docker Compose
-- Integrar frontend e backend através de Git Submodules para modularidade e controle de versão
-- Suportar avaliações acadêmicas e análise de métricas atencionais
 
 ---
 
@@ -32,6 +22,15 @@ Principais objetivos do monorepo:
 
 ---
 
+## Nota
+
+- Este repositório tem como objetivo centralizar a execução, integração e implantação do ecossistema FocusQuest, facilitando a configuração do ambiente para desenvolvimento, testes e avaliação acadêmica.
+
+- Para informações detalhadas sobre arquitetura, funcionalidades e configuração específica para desenvolvimento de cada serviço, consulte os READMEs individuais dos submodules `frontend` e `backend`.
+
+
+---
+
 ## Estrutura do Monorepo
 
 Estrutura de alto nível:
@@ -45,20 +44,26 @@ focusquest-monorepo/
 └── README.md
 ```
 
+Links dos submodules:
+- Frontend:
+    - Repositório: https://github.com/Grupo-Lira/FocusQuest-web.git
+- Backend:
+    - Repositório: https://github.com/Grupo-Lira/backend-rastreamento-ocular.git
+
 O `frontend/` e o `backend/` são mantidos como Git Submodules para permitir desenvolvimento independente e versionamento separado.
 
 ---
 
 ## Tecnologias Utilizadas
 
-Frontend (submodule `FocusQuest-web`):
+Frontend:
 - Next.js, React
 - TypeScript
 - Tailwind CSS
 - Framer Motion
 - API de WebSockets / Socket.IO no cliente
 
-Backend (submodule `backend-rastreamento-ocular`):
+Backend:
 - Node.js, Express
 - Socket.IO (servidor)
 - MongoDB (Mongoose)
@@ -72,24 +77,6 @@ Infra / Orquestração:
 
 Hardware:
 - Arduino (dispositivo para inputs físicos: botões, sensores)
-
----
-
-## Git Submodules — Por que e como
-
-O monorepo usa submodules para manter o frontend e o backend em repositórios separados, preservando histórico e permitindo deploys independentes.
-
-Como clonar corretamente o repositório (incluindo submodules):
-
-```bash
-git clone --recurse-submodules https://github.com/Grupo-Lira/focusquest-monorepo.git
-```
-
-Se já clonou sem submodules:
-
-```bash
-git submodule update --init --recursive
-```
 
 ---
 
@@ -192,12 +179,11 @@ Confirme os mapeamentos no arquivo `docker-compose.yml` do monorepo (pode variar
 
 ## Checklist rápido antes de rodar
 
+- [ ] Possuir uma webcam conectada ao dispositivo.
 - [ ] Clonar com submodules
 - [ ] Verificar `docker-compose.yml` para mapeamento de portas
 - [ ] Ajustar variáveis de ambiente (ex.: string de conexão do MongoDB, porta serial do Arduino)
 - [ ] Executar `docker compose up --build`
-
----
 
 ## Autoria
 
@@ -208,10 +194,3 @@ Confirme os mapeamentos no arquivo `docker-compose.yml` do monorepo (pode variar
 - Igor Leite
 
 ---
-
-## Nota
-
-- Consulte os READMEs específicos dos submodules para instruções detalhadas do frontend e backend.
-
----
-
