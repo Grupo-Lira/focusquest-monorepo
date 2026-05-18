@@ -39,7 +39,7 @@ Estrutura de alto nível:
 focusquest-monorepo/
 ├── frontend/        # submodule: FocusQuest-web (Next.js)
 ├── backend/         # submodule: backend-rastreamento-ocular (Node.js)
-├── docker-compose.yml
+├── compose.yml
 ├── .gitmodules
 └── README.md
 ```
@@ -125,13 +125,13 @@ Portas típicas (padrões usados no desenvolvimento):
 - MongoDB: 27017
 - Redis: 6379
 
-Confirme os mapeamentos no arquivo `docker-compose.yml` do monorepo (pode variar).
+Confirme os mapeamentos no arquivo `compose.yml` do monorepo (pode variar).
 
 ---
 
 ## Docker & Arquitetura
 
-- O `docker-compose.yml` centraliza a execução de frontend e backend, além de dependências (MongoDB, Redis).
+- O `compose.yml` centraliza a execução de frontend e backend, além de dependências (MongoDB, Redis).
 - Arquitetura facilita reprodução dos experimentos, deploys em ambientes de laboratório e integração contínua.
 ---
 
@@ -181,7 +181,7 @@ Confirme os mapeamentos no arquivo `docker-compose.yml` do monorepo (pode variar
 
 - [ ] Possuir uma webcam conectada ao dispositivo.
 - [ ] Clonar com submodules
-- [ ] Verificar `docker-compose.yml` para mapeamento de portas
+- [ ] Verificar `compose.yml` para mapeamento de portas
 - [ ] Ajustar variáveis de ambiente (ex.: string de conexão do MongoDB, porta serial do Arduino)
 - [ ] Executar `docker compose up --build`
 
