@@ -132,24 +132,41 @@ Confirme os mapeamentos no arquivo `compose.yml` do monorepo (pode variar).
 
 ---
 
-🕹️ Como Jogar
-1 - Selecione 'Crie uma conta' (Essa opção é disponibilizada para os doutores).
-2 - Preencha os campos 'email', 'senha', 'confirmar senha' e cadastre-se 'Cadastrar'.
-3 - Faça o login com os dados da conta criada.
-4 - No menu geral escolha a opção 'Calibração' (Sem esse passo as fases não vão funcionar corretamente).
-5 - Após finalizar a 'Calibração' as fases estão liberadas, inicie pela fase 1.
-6 - Ao iniciar a fase 1 vai ser disponibilizada a opção de Selecionar Paciente.
-7 - Se o banco de dados não estiver populado, será preciso criar um perfil de paciente.
-8 - No menu, selecione 'Fichas' e escolha a opção 'Criar nova ficha', preencha os campos e confirme.
-9 - Após a criação do paciente, selecione a fase 1 e escolha o paciente criado (O sistema entende que é aquele paciente que irá jogar).
+## 🕹️ Como Jogar
 
-Importante: A fase 2 só funciona corretamente se conectada com um arduíno.
+1. Selecione a opção **"Criar uma conta"**  
+   *(Essa funcionalidade é destinada aos doutores responsáveis pela aplicação do teste).*
 
+2. Preencha os campos:
+   - E-mail
+   - Senha
+   - Confirmar senha
 
-Clique em "Iniciar Jornada" na tela inicial.
-Inicie no primeiro planeta no menu.
-Encontre e fixe o olhar nas estrelas enquanto evita distrações.
-Complete o desafio para desbloquear o próximo nível.
+   Em seguida, clique em **"Cadastrar"**.
+
+3. Faça login utilizando os dados cadastrados.
+
+4. No menu principal, selecione a opção **"Calibração"**.  
+   *(Sem essa etapa, as fases não funcionarão corretamente).*
+
+5. Após finalizar a calibração, as fases serão liberadas.  
+   Inicie pela **Fase 1**.
+
+6. Ao iniciar a Fase 1, será exibida a opção **"Selecionar Paciente"**.
+
+7. Caso o banco de dados ainda não esteja populado, será necessário criar um perfil de paciente.
+
+8. No menu principal:
+   - selecione **"Fichas"**
+   - clique em **"Criar nova ficha"**
+   - preencha os dados solicitados
+   - confirme a criação
+
+9. Após criar o paciente:
+   - volte para a Fase 1
+   - selecione o paciente criado
+
+   O sistema entenderá que aquele paciente será o participante da sessão.
 
 ---
 
