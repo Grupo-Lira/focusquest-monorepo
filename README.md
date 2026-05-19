@@ -8,6 +8,9 @@ O FocusQuest é uma plataforma que combina uma aplicação cliente gamificada (N
 
 ---
 
+Link do Projeto Hospedado na GCP:
+-  https://focusquest-frontend-kxhuw4rwka-uc.a.run.app/ 
+
 ## Funcionalidades Principais
 
 - Rastreamento ocular (eye-tracking) integrado ao jogo
@@ -126,6 +129,27 @@ Portas típicas (padrões usados no desenvolvimento):
 - Redis: 6379
 
 Confirme os mapeamentos no arquivo `compose.yml` do monorepo (pode variar).
+
+---
+
+🕹️ Como Jogar
+1 - Selecione 'Crie uma conta' (Essa opção é disponibilizada para os doutores).
+2 - Preencha os campos 'email', 'senha', 'confirmar senha' e cadastre-se 'Cadastrar'.
+3 - Faça o login com os dados da conta criada.
+4 - No menu geral escolha a opção 'Calibração' (Sem esse passo as fases não vão funcionar corretamente).
+5 - Após finalizar a 'Calibração' as fases estão liberadas, inicie pela fase 1.
+6 - Ao iniciar a fase 1 vai ser disponibilizada a opção de Selecionar Paciente.
+7 - Se o banco de dados não estiver populado, será preciso criar um perfil de paciente.
+8 - No menu, selecione 'Fichas' e escolha a opção 'Criar nova ficha', preencha os campos e confirme.
+9 - Após a criação do paciente, selecione a fase 1 e escolha o paciente criado (O sistema entende que é aquele paciente que irá jogar).
+
+Importante: A fase 2 só funciona corretamente se conectada com um arduíno.
+
+
+Clique em "Iniciar Jornada" na tela inicial.
+Inicie no primeiro planeta no menu.
+Encontre e fixe o olhar nas estrelas enquanto evita distrações.
+Complete o desafio para desbloquear o próximo nível.
 
 ---
 
