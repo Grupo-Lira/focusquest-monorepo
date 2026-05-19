@@ -134,7 +134,7 @@ Confirme os mapeamentos no arquivo `compose.yml` do monorepo (pode variar).
 
 ## 🕹️ Como Jogar
 
-0. Extra: Posicionamento ideal do notebook:
+0. Posicionamento ideal do notebook:
     <img width="1672" height="941" alt="ChatGPT Image 19 de mai  de 2026, 01_32_01" src="https://github.com/user-attachments/assets/a368000a-2337-4174-8262-ca03d3c5ab76" />
 
 Iniciando o uso do sistema:
